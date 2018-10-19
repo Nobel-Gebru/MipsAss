@@ -9,11 +9,11 @@
    # li $v0, 1
    # lw $a0, number 
    # syscall
-    li $v0, 11        # Print chars
+    li $v0, 11        # Print characters
     la $a0, 64        # @ (64)
     syscall
-    sub $v0, $v0,10       # Print integers
-    li $a0, 0       #0 Load integers
+    sub $v0, $v0,10  # Print integers
+    li $a0, 0       # Load 0
     syscall
     addi $a0, $a0, 2       # 2
     syscall
